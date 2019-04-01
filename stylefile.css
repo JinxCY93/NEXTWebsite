@@ -1,0 +1,132 @@
+.bgcolor {
+  background-color: #007DB8;
+}
+
+ul {
+  width: 100%;
+}
+
+div ul li {
+  list-style-type: none;
+  text-align: right;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  text-align: center
+}
+
+.row {
+  display: flex
+}
+
+.row2 {
+  display: flex;
+  background-color: grey;
+}
+
+#navbar nav ul li a:hover{
+background-color: white;
+color: black;
+}
+
+.column {
+  display: flex;
+  flex: 50%;
+  padding: 10px;
+}
+
+.smallcol{
+  flex:20%;
+  padding: 10px;
+  height: 35vh;
+  margin:2px;
+  border-color: black;
+  border-style: solid;
+}
+
+.imgcol{
+  flex: 7%;
+  padding:2px;
+}
+
+.textcol{
+  flex: 7%;
+}
+
+.smallimage{
+  width: 50px;
+  height: 50px;
+}
+
+.fontdesign {
+  text-decoration: none;
+  color: white
+}
+
+.specfooterlayout{
+  border-color: black;
+  border-style: solid;
+  margin:1px;
+  flex:20%;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; 
+}
+
+.footerspacing{
+  flex: 20%;
+}
+
+.radiobox {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radiobox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.radiobox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.radiobox input:checked ~ .checkmark {
+  background-color: green;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radiobox input:checked ~ .checkmark:after {
+  display: block;
+}
