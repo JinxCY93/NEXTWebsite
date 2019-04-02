@@ -1,4 +1,18 @@
+/* html body{
+  overflow:hidden;
+} */
+
+::-webkit-scrollbar { display: none; } 
+
 .bgcolor {
+  overflow: hidden;
+  background-color: #007DB8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.bgcolorfoot {
   background-color: #007DB8;
 }
 
@@ -13,6 +27,8 @@ div ul li {
 
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding:0;
 }
 
 h1 {
@@ -26,6 +42,16 @@ h1 {
 .row2 {
   display: flex;
   background-color: grey;
+}
+
+#navbar nav ul li a{
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 7px;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 #navbar nav ul li a:hover{
@@ -75,10 +101,12 @@ color: black;
 }
 
 footer{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
-  height: 2.5rem; 
+  height: 49px; 
+  margin: 0;
+  padding: 0;
 }
 
 .footerspacing{
@@ -130,3 +158,22 @@ footer{
 .radiobox input:checked ~ .checkmark:after {
   display: block;
 }
+
+#config img{
+  margin: 0 auto;
+  width: 100%;
+  display: fixed;
+}
+
+/* #scrollconfigleft{
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+#scrollconfigleft div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+} */

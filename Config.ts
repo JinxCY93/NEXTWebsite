@@ -52,7 +52,6 @@ const hddconfig = [
   }
 ]
 
-
 function getValue(id, desc) {
   let radioid = id;
   let radiovalue = desc;
@@ -85,5 +84,4 @@ function getValue(id, desc) {
   } else if (radioid === "hddrd4") {
     document.getElementById("hdd").innerHTML = radiovalue;
   }
-
 }
